@@ -220,27 +220,6 @@ This dashboard simulates a **risk analytics tool used by fintech and banking ins
 
 ---
 
-# Repository Structure
-
-credit-risk-analytics
-│
-├── data
-│ └── loan_dataset_clean.csv
-│
-├── notebooks
-│ └── credit_risk_analysis.ipynb
-│
-├── dashboard
-│ └── powerbi_dashboard.pbix (coming soon)
-│
-├── images
-│
-├── requirements.txt
-│
-└── README.md
-
----
-
 # Author
 
 **Data Analytics Portfolio Project - Salsabila Eka Hariadi**
