@@ -177,8 +177,6 @@ An interactive **Credit Risk Monitoring Dashboard** has been developed to simula
 
 📌 *This dashboard transforms analytical results into actionable business insights.*
 
-📌 *This dashboard transforms analytical results into actionable business insights.*
-
 ---
 
 ## Tools & Technologies
