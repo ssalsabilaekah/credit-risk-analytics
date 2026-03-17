@@ -1,214 +1,187 @@
 # Credit Risk Analytics: Loan Default Prediction & Risk Monitoring
 
-## Project Overview
+## Executive Summary
 
-This project presents an **end-to-end credit risk analytics workflow** designed to evaluate borrower risk and predict loan default using machine learning techniques.
+This project delivers an **end-to-end credit risk analytics solution** designed to simulate how financial institutions assess borrower risk, predict loan defaults, and monitor portfolio exposure.
 
-The objective is to simulate a **real-world credit risk assessment process used in fintech and banking institutions**, combining data analytics, risk modeling, and financial loss estimation.
+By integrating **data analytics, machine learning, and financial risk modeling**, this project demonstrates how data-driven insights can support **risk mitigation, credit decision-making, and financial loss forecasting**.
 
-The project covers:
+The solution includes:
+- Predictive modeling of loan default probability  
+- Borrower risk segmentation  
+- Expected Loss estimation (PD × LGD × EAD)  
+- Interactive risk monitoring dashboard (Power BI)  
 
-- Data cleaning and preprocessing  
-- Exploratory data analysis (EDA)  
-- Feature engineering for credit risk  
-- Machine learning model for default prediction  
-- Risk segmentation of borrowers  
-- Expected Loss calculation (PD × LGD × EAD)  
-- Interactive risk monitoring dashboard (Power BI)
-
-This project demonstrates the practical application of **data analytics and machine learning in financial risk management**.
+This project reflects a **real-world implementation of credit risk analytics used in fintech and banking environments**.
 
 ---
 
-# Business Problem
+## Business Problem
 
-Financial institutions face significant losses due to loan defaults.
+Loan defaults represent a major source of financial loss for lending institutions.
 
-To minimize financial risk, lenders must:
+To effectively manage risk, financial institutions must:
 
-- Identify high-risk borrowers  
-- Estimate probability of default  
-- Monitor portfolio risk exposure  
-- Forecast potential financial losses  
+- Identify high-risk borrowers before loan approval  
+- Estimate the probability of default (PD)  
+- Monitor portfolio-level risk exposure  
+- Quantify potential financial losses  
 
-This project simulates a **credit risk monitoring framework used by lending platforms**.
-
----
-
-# Dataset
-
-The dataset contains borrower and loan characteristics such as:
-
-- Loan amount  
-- Interest rate  
-- Borrower income  
-- Debt-to-income ratio (DTI)  
-- Credit utilization  
-- Loan purpose  
-- Employment history  
-
-These features are commonly used in **credit risk modeling**.
+This project simulates a **credit risk monitoring framework** that enables proactive and data-driven risk management.
 
 ---
 
-# Project Workflow
+## Dataset
 
-Raw Loan Data
-↓
-Data Cleaning
-↓
-Exploratory Data Analysis
-↓
-Feature Engineering
-↓
-Machine Learning Model
-↓
-Risk Score Generation
-↓
-Expected Loss Estimation
-↓
-Risk Monitoring Dashboard
+The dataset contains borrower-level financial and behavioral attributes commonly used in credit risk modeling, including:
+
+- Loan characteristics (amount, term, interest rate)  
+- Borrower financial profile (income, DTI)  
+- Credit behavior (utilization, accounts)  
+- Employment and verification status  
+
+These features serve as the foundation for **risk modeling and predictive analytics**.
 
 ---
 
-# Feature Engineering
-
-Several risk indicators were created:
-
-- **DTI Risk Flag** – borrower leverage indicator  
-- **Income Bucket** – borrower income segmentation  
-- **Credit Utilization Risk** – credit card usage risk  
-- **Employment Score** – employment stability proxy  
-- **Loan Size Category** – segmentation of loan exposure  
-
-These engineered features help improve **risk modeling accuracy**.
+## Project Workflow
+Raw Loan Data > Data Cleaning & Preprocessing > Exploratory Data Analysis (EDA) > Feature Engineering > Machine Learning Model > Risk Score Generation > Expected Loss Estimation > Power BI Risk Dashboard
 
 ---
 
-# Machine Learning Model
+## Feature Engineering
 
-A classification model was developed to predict **loan default probability**.
+To enhance predictive performance and business interpretability, several risk indicators were engineered:
 
-Output variables include:
+- **DTI Risk Flag** → Measures borrower leverage risk  
+- **Income Bucket** → Segments repayment capacity  
+- **Credit Utilization Risk** → Captures credit behavior risk  
+- **Employment Score** → Proxy for income stability  
+- **Loan Size Category** → Exposure segmentation  
 
-- Predicted default probability  
-- Borrower risk score  
-- Risk segmentation  
-
-This allows lenders to **identify high-risk borrowers before loan approval**.
-
----
-
-# Credit Risk Metrics
-
-Key credit risk metrics were calculated:
-
-## Probability of Default (PD)
-
-Probability that a borrower will default.
-
-## Loss Given Default (LGD)
-
-Percentage of loan lost when default occurs.
-
-## Exposure at Default (EAD)
-
-Outstanding loan balance at the time of default.
-
-## Expected Loss
-
-Expected Loss represents the **anticipated financial loss from credit exposure**.
-
-Expected Loss formula:
-Expected Loss = PD × LGD × EAD
-
-
-This metric is widely used in **banking risk management and regulatory frameworks**.
+These features improve both **model accuracy and business interpretability**.
 
 ---
 
-# Key Insights
+## Machine Learning Model
 
-Key findings from the analysis include:
+A classification model was developed to estimate **borrower default probability**.
 
-- Borrowers with **high debt-to-income ratios** show significantly higher default rates.  
-- **Credit utilization** is strongly associated with borrower risk.  
-- **Income segmentation** helps differentiate repayment capacity.  
-- Machine learning models can effectively estimate **default probability**.  
-- Risk segmentation allows lenders to **prioritize high-risk borrowers for monitoring**.
+### Model Outputs:
+- Predicted Probability of Default  
+- Risk Score  
+- Risk Segmentation  
 
----
-
-# Key Model Visualizations
-
-Below are several key visualizations generated from the machine learning model and risk analysis.
-
-These figures provide insights into **model performance, important predictive features, and borrower risk segmentation**.
+This enables lenders to:
+- Detect high-risk borrowers early  
+- Support credit approval decisions  
+- Enhance portfolio monitoring  
 
 ---
 
-## ROC Curve – Model Performance
+## Credit Risk Metrics
 
-The ROC Curve evaluates the classification model’s ability to distinguish between **default and non-default borrowers**.
+The project incorporates standard financial risk metrics used in banking:
 
-A higher Area Under the Curve (AUC) indicates stronger predictive performance.
+### Probability of Default (PD)
+Likelihood that a borrower will default.
 
-This visualization demonstrates that the model is capable of effectively identifying **high-risk borrowers who are more likely to default**.
+### Loss Given Default (LGD)
+Percentage of exposure lost if default occurs.
+
+### Exposure at Default (EAD)
+Total exposure at the time of default.
+
+### Expected Loss (EL)
+
+**Expected Loss = PD × LGD × EAD**
+
+This metric quantifies **potential financial loss** and is widely used in:
+- Credit risk modeling  
+- IFRS 9 / Basel frameworks  
+- Portfolio risk management  
+
+---
+
+## Key Insights
+
+The analysis reveals several important risk patterns:
+
+- Borrowers with **high Debt-to-Income (DTI)** exhibit significantly higher default risk  
+- **Credit utilization** is a strong predictor of financial distress  
+- **Income segmentation** effectively differentiates repayment capability  
+- Machine learning models can reliably estimate **default probability**  
+- Risk segmentation enables **prioritized monitoring of high-risk borrowers**  
+
+These insights demonstrate how data analytics can support **better risk control and decision-making in lending**.
+
+---
+
+## Key Model Visualizations
+
+### ROC Curve – Model Performance
+
+The ROC Curve evaluates the model’s ability to distinguish between default and non-default borrowers.
+
+A higher AUC indicates stronger predictive performance, confirming that the model can effectively identify high-risk borrowers.
 
 ![ROC Curve](images/roc_curve.png)
 
 ---
 
-## Feature Importance – Key Risk Drivers
+### Feature Importance – Key Risk Drivers
 
-Feature importance analysis highlights which variables contribute most to predicting loan default.
+Feature importance analysis highlights the most influential variables in predicting default risk.
 
-Important predictors may include factors such as:
+Key drivers include:
+- Debt-to-Income Ratio  
+- Credit Utilization  
+- Loan Amount  
+- Interest Rate  
+- Borrower Income  
 
-- Debt-to-Income Ratio (DTI)
-- Credit Utilization
-- Loan Amount
-- Interest Rate
-- Borrower Income
-
-Understanding these drivers helps financial institutions identify **key risk factors influencing borrower default behavior**.
+This helps institutions understand **what drives borrower risk behavior**.
 
 ![Feature Importance](images/feature_importance.png)
 
 ---
 
-## Risk Score Distribution – Borrower Risk Segmentation
+### Risk Score Distribution – Borrower Segmentation
 
-This visualization illustrates the distribution of **risk scores assigned to borrowers**.
+This visualization shows how borrowers are distributed across risk levels.
 
-Risk scores are used to segment borrowers into different risk categories, enabling lenders to:
-
-- identify high-risk borrowers
-- monitor portfolio risk exposure
-- support data-driven credit decisions
-
-Borrower risk segmentation is a common practice in **credit risk management and lending platforms**.
+It enables:
+- Identification of high-risk segments  
+- Portfolio-level risk monitoring  
+- Data-driven credit decision support  
 
 ![Risk Distribution](images/risk_distribution.png)
 
 ---
 
-# Power BI Dashboard (Coming Soon)
+## Power BI Dashboard
 
-An interactive **Credit Risk Monitoring Dashboard** will be developed using Power BI.
+An interactive **Credit Risk Monitoring Dashboard** has been developed to simulate real-world risk analytics tools used in financial institutions.
 
-The dashboard will include:
+### Dashboard Preview
+
+![Dashboard Preview](dashboard_preview.png)
+
+### Dashboard Capabilities
 
 - Portfolio risk overview  
 - Borrower risk segmentation  
-- Model prediction insights  
-- Expected loss analysis  
+- Default probability insights  
+- Expected loss monitoring  
+- Interactive filtering and drill-down  
 
-This dashboard simulates a **risk analytics tool used by fintech and banking institutions**.
+📌 *This dashboard transforms analytical results into actionable business insights.*
+
+📌 *This dashboard transforms analytical results into actionable business insights.*
 
 ---
 
-# Tools & Technologies
+## Tools & Technologies
 
 - Python  
 - Pandas  
@@ -220,13 +193,18 @@ This dashboard simulates a **risk analytics tool used by fintech and banking ins
 
 ---
 
-# Author
+## Author
 
-**Data Analytics Portfolio Project - Salsabila Eka Hariadi**
+**Salsabila Eka Hariadi**  
 
-Focus areas:
+Aspiring Data Analyst with focus on:
+- Credit Risk Analytics  
+- Machine Learning for Finance  
+- Financial Data Analysis  
+- Business Intelligence & Dashboarding  
 
-- Credit risk analytics  
-- Machine learning for finance  
-- Financial data analysis  
-- Business intelligence dashboards
+---
+
+This project demonstrates how an end-to-end analytics workflow can be applied to solve real-world financial problems — from **data processing to predictive modeling and business intelligence visualization**.
+
+It reflects the role of a data analyst in transforming raw data into **strategic insights for risk management and decision-making**.
